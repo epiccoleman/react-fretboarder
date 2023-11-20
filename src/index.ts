@@ -1,0 +1,1 @@
+export { Fretboarder } from './VerticalFretboard';
