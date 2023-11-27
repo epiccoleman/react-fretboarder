@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export const VerticalFretboard = () => {
   return (
-    <svg viewBox="0 0 400 1000">
+    <svg style={{maxHeight: "100%", maxWidth: "100%"}} viewBox="0 0 400 1000">
 
         <g id='strings'>
         <line x1="50" y1="0" x2="50" y2="500" stroke="black" stroke-width="2"/>
