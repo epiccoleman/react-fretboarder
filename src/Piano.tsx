@@ -48,11 +48,11 @@ export const Piano = (props: PianoProps) => {
 
     let blackKeyXLocations: number[] = [];
     for (let i = 0; i < octaves; i++) {
-        blackKeyXLocations.push(whiteKeyXLocations[1 + i*7] - (WHITE_KEY_WIDTH / 2))
-        blackKeyXLocations.push(whiteKeyXLocations[2 + i*7] - (WHITE_KEY_WIDTH / 2))
-        blackKeyXLocations.push(whiteKeyXLocations[4 + i*7] - (WHITE_KEY_WIDTH / 2))
-        blackKeyXLocations.push(whiteKeyXLocations[5 + i*7] - (WHITE_KEY_WIDTH / 2))
-        blackKeyXLocations.push(whiteKeyXLocations[6 + i*7] - (WHITE_KEY_WIDTH / 2))
+        blackKeyXLocations.push(whiteKeyXLocations[1 + i*7] - (BLACK_KEY_WIDTH / 2))
+        blackKeyXLocations.push(whiteKeyXLocations[2 + i*7] - (BLACK_KEY_WIDTH / 2))
+        blackKeyXLocations.push(whiteKeyXLocations[4 + i*7] - (BLACK_KEY_WIDTH / 2))
+        blackKeyXLocations.push(whiteKeyXLocations[5 + i*7] - (BLACK_KEY_WIDTH / 2))
+        blackKeyXLocations.push(whiteKeyXLocations[6 + i*7] - (BLACK_KEY_WIDTH / 2))
     }
 
     const roundedRectPath = (x1, x2, y1, y2, corner_radius = KEY_CORNER_RADIUS) => {
